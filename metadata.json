@@ -1,0 +1,6 @@
+{
+  "name": "Mi Cocina - Gestión de Cocina Económica",
+  "description": "PWA para gestión integral de cocina económica: menús diarios, producción, recetario con costeo promedio ponderado, inventario, punto de venta táctil, corte de caja y rentabilidad.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

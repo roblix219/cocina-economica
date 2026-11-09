@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="50%" stop-color="#c2410c"/>
+      <stop offset="100%" stop-color="#7c2d12"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle with padding for safe zone -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Outer subtle circular glow -->
+  <circle cx="256" cy="256" r="195" fill="none" stroke="#fed7aa" stroke-opacity="0.25" stroke-width="4"/>
+
+  <!-- Main Casserole / Cazuela Illustration -->
+  <g filter="url(#shadow)" transform="translate(0, 10)">
+    <!-- Steam waves -->
+    <path d="M 215 145 Q 205 120 220 95 Q 235 70 225 50" fill="none" stroke="#fef3c7" stroke-width="12" stroke-linecap="round" opacity="0.85"/>
+    <path d="M 256 135 Q 246 110 261 85 Q 276 60 266 40" fill="none" stroke="#fef3c7" stroke-width="14" stroke-linecap="round" opacity="0.95"/>
+    <path d="M 297 145 Q 287 120 302 95 Q 317 70 307 50" fill="none" stroke="#fef3c7" stroke-width="12" stroke-linecap="round" opacity="0.85"/>
+
+    <!-- Cazuela Lid / Rim -->
+    <ellipse cx="256" cy="235" rx="145" ry="32" fill="#fff7ed"/>
+    <ellipse cx="256" cy="235" rx="135" ry="26" fill="url(#goldGrad)"/>
+
+    <!-- Steaming soup / stew inside rim -->
+    <ellipse cx="256" cy="235" rx="120" ry="20" fill="#b45309"/>
+
+    <!-- Cazuela Pot Body -->
+    <path d="M 121 240 C 125 335, 170 380, 256 380 C 342 380, 387 335, 391 240 Z" fill="#fff7ed"/>
+    <path d="M 128 244 C 132 330, 174 370, 256 370 C 338 370, 380 330, 384 244 Z" fill="url(#bgGrad)"/>
+
+    <!-- Pot handles -->
+    <path d="M 112 250 C 75 250, 75 290, 115 290" fill="none" stroke="#fff7ed" stroke-width="16" stroke-linecap="round"/>
+    <path d="M 400 250 C 437 250, 437 290, 397 290" fill="none" stroke="#fff7ed" stroke-width="16" stroke-linecap="round"/>
+
+    <!-- Chef hat / Spoon emblem on cazuela -->
+    <g transform="translate(256, 305) scale(0.85)">
+      <!-- Crossed spoon and fork / spatula -->
+      <circle cx="0" cy="0" r="32" fill="url(#goldGrad)"/>
+      <path d="M -12 -12 L 12 12 M 12 -12 L -12 12" stroke="#7c2d12" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="-14" cy="-14" r="5" fill="#7c2d12"/>
+      <circle cx="14" cy="-14" r="5" fill="#7c2d12"/>
+    </g>
+
+    <!-- Star decorations -->
+    <polygon points="256,410 262,426 279,426 265,436 270,452 256,442 242,452 247,436 233,426 250,426" fill="#fef08a"/>
+  </g>
+
+  <!-- Typography subtitle at bottom -->
+  <text x="256" y="475" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#fff7ed" letter-spacing="3">MI COCINA</text>
+</svg>
